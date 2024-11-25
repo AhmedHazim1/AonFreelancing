@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace AonFreelancing.Controllers.Mobile.v1
+namespace AonFreelancing.Controllers.Web.v1
 {
     [Authorize]
-    [Route("api/mobile/v1/users")]
+    [Route("api/web/v1/users")]
     [ApiController]
     public class UsersController(MainAppContext mainAppContext, RoleManager<ApplicationRole> roleManager)
         : BaseController

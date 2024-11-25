@@ -17,5 +17,9 @@ namespace AonFreelancing.Models
     public class User : IdentityUser<long>
     {
         public string Name { get; set; }
+        public string? About {  get; set; }
+
+        public ICollection<Bid> Bids { get; set; } = new List<Bid>();
+
     }
 }
